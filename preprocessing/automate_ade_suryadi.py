@@ -16,7 +16,7 @@ def run_preprocessing():
 
     # 1. Membaca data mentah dari folder sebelah
     # Script ini ada di folder 'preprocessing', jadi kita mundur satu langkah '../'
-    df = pd.read_csv('sample_data/heart.csv')
+    df = pd.read_csv('../dataset_raw/heart.csv')
 
     # 2. Membersihkan data duplikat
     df_clean = df.drop_duplicates()
